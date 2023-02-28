@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    transition: -2s linear;
+
+    vertical-align: middle;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2rem 7%;
+    z-index: 1000;
+    background-color: black;
+
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+nav ul li a {
+    font-size: 3rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: deeppink;
+    transition: -3s;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+}
+
+header .fa-bars {
+    display: none;
+    font-size: 2rem;
+    color: #fffdff;
+    ;
+    border-radius: -5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0 0, 0, .3);
+}
+
+header #toggler {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text1 {
+    color: #f2f2f2;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 10px
+    }
+}
+
+.Band-Section {
+    text-align: center;
+    margin: 10rem 20%;
+}
+
+.Band-Section h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+
+}
+
+.Band-Section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.Band-Section p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: justify;
+    line-height: 3.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 8rem;
+
+}
+
+.row h1 {
+    font-size: 2rem;
+
+}
+
+
+
+/* TOUR DATES*/
+.tour-date {
+    background-color: black;
+    height: 120vh;
+    color: #fffdff;
+}
+
+.main-container {
+    margin: 10rem 20%;
+}
+
+.content-tour {
+    text-align: center;
+
+}
+
+.content-tour h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: white;
+    padding-top: 5rem;
+
+}
+
+.content-tour p {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.sold-container {
+    background-color: white;
+    color: #717171;
+
+}
+
+.sold-container h3 {
+    font-size: 3rem;
+    padding: 2rem;
+    padding-left: 3rem;
+
+}
+
+.sold-container span {
+    color: white;
+    float: right;
+    background-color: red;
+    padding: .3rem;
+
+}
+
+.roundspan {
+    border-radius: 50%;
+    border: .6rem solid red;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+    margin-top: 8rem;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    font-family: arial;
+    background-color: white;
+    color: #333;
+}
+
+.img-content {
+    padding: 3rem;
+}
+
+.card h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+.card p {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.card button,
+button {
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.card button:hover {
+    background-color: #bbb;
+}
+
+
+.contact-us {
+    margin: 10rem 20%;
+}
+
+.heading {
+    text-align: center;
+
+}
+
+.heading h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.contact h3 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.ico {
+    padding-right: 2rem;
+}
+
+input {
+    padding: 1rem;
+    font-size: 2rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+    padding-right: 10%;
+    margin-right: 1rem;
+    border: 2px solid black;
+}
+
+.contact {
+    width: 31%;
+}
+
+
+section{
+    position: relative;
+}
+section img{
+    width: 100%;
+
+}
+ .h33 {
+    position: absolute;
+    font-size: 6rem;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    top: 3%;
+    transform: translateY(-50%);
+    mix-blend-mode: screen;
+}
+
+
+/* footer*/
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 4rem 1rem;
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.footer-colunm {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.heading1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer-colunm p {
+    font-size: 2rem;
+}
+
+.footer-bottom {
+    display: flex;
+}
+
+.footer-bottom span {
+    margin-right: auto;
+  font-size: 2rem;
+}
+
+.footer-bottom a {
+    display: flex;
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  
+
+}
+@media only screen and (max-width: 760px) {
+  .footer-main{
+    flex-direction: column;
+  }
+
+  }
+
+  .iconss{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.name{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Queries*/
+
+@media screen and (max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~nav {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header nav ul li {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        background: black;
+        border-top: .1rem solid rgba(0 0, 0, .1);
+        display: block;
+    }
+
+  
+
+    .contact {
+        width: 100%;
+    }
+    input{
+        padding-right: 30%;
+    }
+    .name{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1221px) {
+    .row {
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .row2 {
+        flex-direction: column;
+
+    }
+
+   
+    .tour-date {
+        height: 225vh;
+    }
+
+}
